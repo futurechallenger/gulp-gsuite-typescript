@@ -1,0 +1,22 @@
+{
+  "timeZone": "Asia/Hong_Kong",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "gmail": {
+    "name": "Connect All",
+    "logoUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    "contextualTriggers": [
+      {
+        "unconditional": {},
+        "onTriggerFunction": "onGmailMessagePage"
+      }
+    ],
+    "useLocaleFromApp": true,
+    "version": "TRUSTED_TESTER_V2"
+  },
+  "calendar": {
+    "name": "Connect All",
+    "logoUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+  }
+}

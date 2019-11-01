@@ -3,18 +3,23 @@
     "target": "es5",
     "module": "commonjs",
     "lib": ["es2017"],
-    "declaration": false,
+    "declaration": true,
     "noImplicitAny": true,
     "downlevelIteration": true,
-    "sourceMap": true,
-    "outDir": "./built",
+    "sourceMap": false,
+    "outDir": "./lib",
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "rootDir": "./",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "typings/*"],
+      "src/*": ["src/*"],
+    },
     "types": ["node"],
-    "typeRoots": ["./node_modules/@types", "./typings"],
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "example"]
+  "include": ["./index.ts"],
+  "exclude": ["node_modules", "./typings", "example"]
 }

@@ -1,19 +1,17 @@
 {
-  "name": "connect-all-v2",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "gulp-gsuite-typescript",
+  "version": "0.3.0",
   "scripts": {
-    "build": "gulp build"
+    "build": "tsc -p ."
+  },
+  "main": "index.js",
+  "repository": "git@FC:futurechallenger/gsuite-connect-all-v2.git",
+  "author": "Future Challenger <sharp.bruce.lee@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/through2": "^2.0.34"
   },
   "dependencies": {
-    "@types/google-apps-script": "^0.0.62"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.20",
-    "gulp": "^4.0.2",
-    "gulp-rename": "^1.4.0",
-    "jest": "^24.9.0",
     "through2": "^3.0.1",
     "ts2gas": "^3.4.4"
   }

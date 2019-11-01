@@ -3,17 +3,23 @@
     "target": "es5",
     "module": "commonjs",
     "lib": ["es2017"],
-    "declaration": false,
+    "declaration": true,
+    "noImplicitAny": true,
     "downlevelIteration": true,
-    "sourceMap": true,
-    "outDir": ".build",
+    "sourceMap": false,
+    "outDir": "./lib",
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "rootDir": "./",
-    "types": ["google-apps-script"],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "typings/*"],
+      "src/*": ["src/*"],
+    },
+    "types": ["node"],
     "esModuleInterop": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["./index.ts"],
+  "exclude": ["node_modules", "./typings", "example"]
 }

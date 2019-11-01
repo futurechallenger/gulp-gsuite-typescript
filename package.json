@@ -1,5 +1,14 @@
 {
+  "name": "gulp-gsuite-typescript",
+  "version": "0.3.0",
+  "scripts": {
+    "build": "tsc --noEmit"
+  },
+  "main": "index.js",
+  "repository": "git@FC:futurechallenger/gsuite-connect-all-v2.git",
+  "author": "Future Challenger <sharp.bruce.lee@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "@types/gulp-rename": "^0.0.33"
+    "@types/through2": "^2.0.34"
   }
 }

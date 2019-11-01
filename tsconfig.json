@@ -4,14 +4,16 @@
     "module": "commonjs",
     "lib": ["es2017"],
     "declaration": false,
+    "noImplicitAny": true,
     "downlevelIteration": true,
     "sourceMap": true,
-    "outDir": ".build",
+    "outDir": "./built",
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "rootDir": "./",
     "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./typings"],
     "esModuleInterop": true
   },
   "exclude": ["node_modules", "example"]

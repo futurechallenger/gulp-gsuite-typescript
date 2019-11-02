@@ -12,11 +12,6 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*", "typings/*"],
-      "src/*": ["src/*"],
-    },
     "types": ["node"],
     "esModuleInterop": true
   },

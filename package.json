@@ -1,13 +1,27 @@
 {
   "name": "gulp-gsuite-typescript",
   "version": "0.3.0",
+  "description": "A gulp plugin to make a Google Apps Script real typescript project",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "format": "prettier --write ./index.ts ./lib/index.js",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint"
   },
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": "git@FC:futurechallenger/gsuite-connect-all-v2.git",
   "author": "Future Challenger <sharp.bruce.lee@gmail.com>",
+  "keywords": [
+    "gulp",
+    "google app scripts",
+    "typescript"
+  ],
   "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
   "devDependencies": {
     "@types/through2": "^2.0.34"
   },

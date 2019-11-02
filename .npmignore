@@ -1,0 +1,5 @@
+example
+.claspignore
+tsconfig.json
+index.ts
+.prettierrc

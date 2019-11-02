@@ -1,6 +1,6 @@
-import * as Path from "path";
-import ts2gas from "ts2gas";
-import through, { TransformCallback } from "through2";
+import * as Path from 'path';
+import ts2gas from 'ts2gas';
+import through, { TransformCallback } from 'through2';
 
 function trans() {
   return through.obj((file, _, cb) => {
@@ -16,7 +16,7 @@ function trans() {
       extname = Path.extname(relativePath),
       basename = Path.basename(relativePath, extname);
 
-    file.path = Path.join(file.base, Path.join(dirname, basename + ".js"));
+    file.path = Path.join(file.base, Path.join(dirname, basename + '.js'));
 
     cb(null, file);
   });

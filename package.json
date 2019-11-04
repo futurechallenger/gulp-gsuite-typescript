@@ -23,7 +23,8 @@
     "lib/**/*"
   ],
   "devDependencies": {
-    "@types/through2": "^2.0.34"
+    "@types/through2": "^2.0.34",
+    "tslint": "^6.0.0-beta0"
   },
   "dependencies": {
     "through2": "^3.0.1",

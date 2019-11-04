@@ -1,6 +1,7 @@
 // const Path = require("path");
-const { src, dest } = require("gulp");
-const {trans} = require('../lib');
+const { src, dest } = require('gulp');
+const { trans } = require('gulp-gsuite-typescript');
+// const {trans} = require('../lib');
 // const ts2gas = require("ts2gas");
 // const through2 = require("through2");
 
@@ -25,9 +26,9 @@ const {trans} = require('../lib');
 // }
 
 function build(cb) {
-  src("src/**/*.*", { base: "./src" })
+  src('src/**/*.*', { base: './src' })
     .pipe(trans())
-    .pipe(dest("./built"));
+    .pipe(dest('./built'));
   cb();
 }
 

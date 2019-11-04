@@ -12,6 +12,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.20",
     "gulp": "^4.0.2",
+    "gulp-gsuite-typescript": "^0.3.0",
     "gulp-rename": "^1.4.0",
     "jest": "^24.9.0",
     "through2": "^3.0.1",

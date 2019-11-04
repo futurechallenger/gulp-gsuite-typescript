@@ -11,6 +11,11 @@ If you want to develop GSuite Addon Apps with typescript, `gulp` & `gulp-gsuite-
 yarn add gulp-gsuite-typescript -D
 ```
 
+## How it works
+
+1. Transpile typescript files one by one with `ts2gas` the tool from Google.
+2. Rename `.ts` ext to `.js`.
+
 ## Usage
 ```
 const { src, dest } = require('gulp');
